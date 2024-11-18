@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeTest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Contenedor de la aplicación -->
+    <div class="app-container">
+        <!-- Barra lateral izquierda para dispositivos -->
+        <aside class="sidebar">
+            <h2>DISPOSITIVOS</h2>
+            <div class="device-list" id="device-list">
+                <button class="device-item">Switch 1</button>
+                <button class="device-item">Switch 2</button>
+                <button class="device-item">Switch 3</button>
+            </div>
+
+            <!-- Barra inferior con dos botones -->
+            <div class="bottom-bar">
+                <button class="bottom-bar-btn statistics"><img src="assets/statistics.svg" alt="Statistics"
+                        class="statistics-icon" /></button>
+                <button class="bottom-bar-btn devices"><img src="assets/devices.svg" alt="Devices"
+                        class="devices-icon" /></button>
+            </div>
+        </aside>
+
+        <!-- Contenido principal para visualización de tráfico -->
+        <div class="main-content-devices">
+            <div class="interfaces">
+                <h2>INTERFACES</h2>
+            </div>
+            <div class="sub-content">
+                <div class="rutas">
+                    <h2>RUTAS</h2>
+                </div>
+                <div class="vlans">
+                    <h2>VLANS</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

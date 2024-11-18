@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 20px;
+}
+
+.title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    height: 40px;
+    padding: 5px;
+}
+
+.title-bar-left {
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.title-bar-buttons button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.title-bar-buttons button:hover {
+    background-color: #34495e;
+    border-radius: 3px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Ocupa toda la altura de la ventana */
+    background-color: #f0f2f5;
+}
+
+.app-wrapper {
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Asegura que ocupe toda la ventana */
+    flex-grow: 1;
+    /* Permite que crezca si es necesario */
+}
+
+.app-container {
+    display: flex;
+    flex-grow: 1;
+    background-color: #fff;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: white;
+    color: rgb(63, 63, 63);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: -10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    /* Asegura que los elementos estén distribuidos */
+    height: 99.2vh;
+    /* Ocupa toda la altura de la ventana */
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+.sidebar h2 {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.device-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* Hace que la lista de dispositivos ocupe el espacio disponible */
+}
+
+/* Ajustes de estilo para los botones de dispositivos */
+.device-item {
+    position: relative;
+    font-weight: 600;
+    background-color: white;
+    color: #494949;
+    border: none;
+    width: calc(100% + 44px);
+    /* Extiende el ancho para ocupar el espacio del padding */
+    padding: 8px 20px;
+    /* Añade espacio lateral para los iconos */
+    margin: 0 -10px 10px -25px;
+    /* Elimina el espacio lateral */
+    border-radius: 5px;
+    text-align: center;
+    /* Alinea el texto a la izquierda */
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.device-item::before {
+    content: "";
+    filter: invert(10%);
+    background-image: url('assets/switch.svg');
+    /* Ruta al archivo SVG */
+    background-size: 20px 20px;
+    /* Ajusta el tamaño del SVG */
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 25px;
+    /* Ancho del contenedor del icono */
+    height: 20px;
+    /* Alto del contenedor del icono */
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.device-item::after {
+    content: "●";
+    /* Representa el círculo a la derecha */
+    color: #28a745;
+    /* Color verde para el círculo */
+    font-size: 1em;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.device-item:hover {
+    background-color: #ebebeb;
+    color: #1695df;
+    transition: background-color 0.3s ease;
+}
+
+.device-item-container {
+    text-align: center;
+}
+
+.device-ip {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #538cc2;
+}
+
+/* Barra inferior de la barra lateral */
+.bottom-bar {
+    display: flex;
+    width: calc(100% + 45px);
+    height: 9%;
+    padding: 0;
+    margin: 0px 0px 0px -25px;
+    align-items: center;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el tamaño final */
+}
+
+/* Botones de la barra inferior */
+.bottom-bar-btn {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #b80842;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: px;
+}
+
+/* Íconos SVG de los botones */
+.bottom-bar-btn.statistics {
+    padding: 20px;
+}
+
+.bottom-bar-btn.devices {
+    padding: 20px;
+}
+
+.bottom-bar-btn:hover {
+    background-color: #343a40;
+    transition: background-color 0.3s ease;
+}
+
+/* Agrega un estilo para cuando el botón esté seleccionado/activo */
+.bottom-bar-btn.active {
+    background-color: #1198ce;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.main-content-devices h2 {
+    color: #494949;
+    font-size: 14px;
+    margin: 15px;
+}
+
+.interfaces {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+.rutas {
+    flex: 1;
+    width: 50vh;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+.vlans {
+    flex: 1;
+    width: 50vh;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+}
+
+.app-header {
+    color: white;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* Establece el espacio de 10px entre los elementos */
+}
+
+.app-header h2 {
+    color: #494949;
+    font-size: 14px;
+}
+
+.app-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.traffic-visual {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 250px;
+}
+
+.statistics-visual {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    min-height: 250px;
+}
+
+.devices-icon {
+    width: 27px;
+    height: 27px;
+    filter: invert(100%);
+}
+
+.statistics-icon {
+    margin: 3px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    filter: invert();
+}
+
+.app-footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+/* Animación para desvanecer la salida del contenido */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Animación para desvanecer la entrada del contenido */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* Definición de la animación de entrada */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
