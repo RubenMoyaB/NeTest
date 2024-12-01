@@ -6,10 +6,10 @@ function createWindow() {
     width: 1250,
     height: 753,
     resizable: true,
-    frame: true,  // Desactiva el marco de la ventana
+    frame: true,  
     webPreferences: {
       nodeIntegration: true,
-      preload: path.join(__dirname, 'preload.js'), // Añade un archivo de preload
+      preload: path.join(__dirname, 'preload.js'), 
     },
   });
 

@@ -1,0 +1,60 @@
+{
+    "Dispositivos": [
+        {
+            "IP": "192.168.100.1",
+            "MAC": "c0:f6:c2:3a:48:ba",
+            "Fabricante": "HUAWEI TECHNOLOGIES CO.,LTD",
+            "Tipo de dispositivo": "Router",
+            "Escaneo de puertos": [
+                "25/udp",
+                "53/udp",
+                "67/udp"
+            ],
+            "Latencia (ms)": "0ms"
+        },
+        {
+            "IP": "192.168.100.2",
+            "MAC": "7c:16:89:8c:0a:f4",
+            "Fabricante": "Sagemcom Broadband SAS",
+            "Tipo de dispositivo": "Router",
+            "Escaneo de puertos": [
+                "67/udp",
+                "3389/udp",
+                "8080/udp"
+            ],
+            "Latencia (ms)": "0ms"
+        },
+        {
+            "IP": "192.168.100.3",
+            "MAC": "7c:16:89:8c:c2:71",
+            "Fabricante": "Sagemcom Broadband SAS",
+            "Tipo de dispositivo": "Switch",
+            "Escaneo de puertos": [
+                "69/udp",
+                "80/udp",
+                "8080/udp"
+            ],
+            "Latencia (ms)": "0ms"
+        },
+        {
+            "IP": "192.168.100.52",
+            "MAC": "88:c3:97:b8:ea:e1",
+            "Fabricante": "Beijing Xiaomi Mobile Software Co., Ltd",
+            "Tipo de dispositivo": "Router",
+            "Escaneo de puertos": [
+                "23/udp",
+                "67/udp",
+                "69/udp"
+            ],
+            "Latencia (ms)": "0ms"
+        },
+        {
+            "IP": "192.168.100.58",
+            "MAC": "b4:2e:99:61:2d:b0",
+            "Fabricante": "GIGA-BYTE TECHNOLOGY CO.,LTD.",
+            "Tipo de dispositivo": "Desconocido",
+            "Escaneo de puertos": [],
+            "Latencia (ms)": "0ms"
+        }
+    ]
+}

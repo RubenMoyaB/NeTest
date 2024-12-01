@@ -69,7 +69,7 @@ body {
 
 /* Barra lateral */
 .sidebar {
-    width: 250px;
+    width: 300px;
     background-color: white;
     color: rgb(63, 63, 63);
     padding-top: 10px;
@@ -106,19 +106,21 @@ body {
     color: #494949;
     border: none;
     width: calc(100% + 44px);
-    /* Extiende el ancho para ocupar el espacio del padding */
     padding: 8px 20px;
-    /* Añade espacio lateral para los iconos */
     margin: 0 -10px 10px -25px;
-    /* Elimina el espacio lateral */
     border-radius: 5px;
-    text-align: center;
-    /* Alinea el texto a la izquierda */
+    text-align: left;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 0.8em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-overflow: ellipsis;
+    
+}
+
+.device-name{
+    max-width: 200px
 }
 
 .device-item::before {
@@ -154,21 +156,43 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.device-item-container {
-    text-align: center;
-}
-
 .device-item.active {
     background-color: #aac4ff; /* Color de fondo cuando está activo */
     color: white; /* Color de texto cuando está activo */
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
-
 .device-ip {
     font-size: 0.7em;
     font-weight: 600;
     color: #538cc2;
+}
+
+.device-latency{
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #2f8b4b;
+}
+
+.device-mac{
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #495057;
+}
+
+.device-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 35px 20px;
+}
+
+.device-info strong{
+    color: #39608a;
+}
+
+.device-info ul{
+    margin-left: 20px;
 }
 
 /* Barra inferior de la barra lateral */
