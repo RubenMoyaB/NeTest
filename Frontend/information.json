@@ -1,130 +1,179 @@
 {
     "Dispositivos": [
         {
-            "IP": "192.168.100.1",
-            "MAC": "c0:f6:c2:3a:48:ba",
-            "Fabricante": "AYWEY TECHNOLOGIES CO.,LTD",
-            "Tipo de dispositivo": "Router o Servidor DHCP",
+            "IP": "192.168.1.65",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Switch",
             "Escaneo de puertos": [
-                "25/udp",
-                "53/udp",
-                "67/udp",
-                "5000/udp"
+                "69/udp",
+                "3389/udp"
             ],
-            "Latencia (ms)": "0ms"
+            "Latencia (ms)": "25.3 ms"
         },
         {
-            "IP": "192.168.100.2",
-            "MAC": "7c:16:89:8c:0a:f4",
-            "Fabricante": "Sagemcom Broadband SAS",
-            "Tipo de dispositivo": "Desconocido",
-            "Escaneo de puertos": [
-                "23/udp",
-                "25/udp",
-                "8080/udp"
-            ],
-            "Latencia (ms)": "0ms"
-        },
-        {
-            "IP": "192.168.100.3",
-            "MAC": "7c:16:89:8c:c2:71",
-            "Fabricante": "Sagemcom Broadband SAS",
-            "Tipo de dispositivo": "Dispositivo de red (Switch, Router, Impresora, Cámaras IP)",
-            "Escaneo de puertos": [
-                "53/udp",
-                "161/udp"
-            ],
-            "Latencia (ms)": "0ms"
-        },
-        {
-            "IP": "192.168.100.52",
-            "MAC": "88:c3:97:b8:ea:e1",
-            "Fabricante": "Beijing Xiaomi Mobile Software Co., Ltd",
-            "Tipo de dispositivo": "Desconocido",
-            "Escaneo de puertos": [
-                "53/udp",
-                "443/udp",
-                "5000/udp"
-            ],
-            "Latencia (ms)": "0ms"
-        },
-        {
-            "IP": "192.168.100.58",
-            "MAC": "b4:2e:99:61:2d:b0",
-            "Fabricante": "GIGA-BYTE TECHNOLOGY CO.,LTD.",
+            "IP": "192.168.1.66",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
             "Tipo de dispositivo": "Desconocido",
             "Escaneo de puertos": [],
-            "Latencia (ms)": "0ms"
+            "Latencia (ms)": "23.7 ms"
+        },
+        {
+            "IP": "192.168.1.69",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Desconocido",
+            "Escaneo de puertos": [],
+            "Latencia (ms)": "64.0 ms"
+        },
+        {
+            "IP": "192.168.1.72",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Router",
+            "Escaneo de puertos": [
+                "67/udp"
+            ],
+            "Latencia (ms)": "5.79 ms"
+        },
+        {
+            "IP": "192.168.1.74",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Dispositivo de red (Switch, Router, Impresora, Cámaras IP)",
+            "Escaneo de puertos": [
+                "22/udp",
+                "23/udp",
+                "53/udp",
+                "67/udp",
+                "161/udp",
+                "3389/udp",
+                "5000/udp",
+                "8080/udp"
+            ],
+            "Latencia (ms)": "Desconocido"
+        },
+        {
+            "IP": "192.168.1.85",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Desconocido",
+            "Escaneo de puertos": [
+                "53/udp"
+            ],
+            "Latencia (ms)": "Desconocido"
+        },
+        {
+            "IP": "192.168.1.254",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Router",
+            "Escaneo de puertos": [
+                "53/udp",
+                "67/udp",
+                "69/udp",
+                "443/udp"
+            ],
+            "Latencia (ms)": "97.0 ms"
+        },
+        {
+            "IP": "192.168.2.1",
+            "MAC": "ca:01:3c:d5:00:08",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Router",
+            "Escaneo de puertos": [
+                "67/udp"
+            ],
+            "Latencia (ms)": "28.4 ms"
+        },
+        {
+            "IP": "192.168.2.3",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Desconocido",
+            "Escaneo de puertos": [],
+            "Latencia (ms)": "0.022 ms"
+        },
+        {
+            "IP": "192.168.3.1",
+            "MAC": "Desconocido",
+            "Fabricante": "Desconocido",
+            "Tipo de dispositivo": "Router",
+            "Escaneo de puertos": [
+                "67/udp"
+            ],
+            "Latencia (ms)": "39.3 ms"
+        }
+    ],
+    "Métricas de Red": [
+        {
+            "Timestamp": "02/12/24 - 00:47:22",
+            "Datos enviados (MB)": 7.69,
+            "Datos recibidos (MB)": 92.67
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:23",
+            "Datos enviados (MB)": 7.69,
+            "Datos recibidos (MB)": 92.67
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:24",
+            "Datos enviados (MB)": 7.69,
+            "Datos recibidos (MB)": 92.67
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:25",
+            "Datos enviados (MB)": 7.69,
+            "Datos recibidos (MB)": 92.67
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:26",
+            "Datos enviados (MB)": 7.7,
+            "Datos recibidos (MB)": 92.68
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:27",
+            "Datos enviados (MB)": 7.7,
+            "Datos recibidos (MB)": 92.69
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:28",
+            "Datos enviados (MB)": 7.71,
+            "Datos recibidos (MB)": 92.69
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:29",
+            "Datos enviados (MB)": 7.76,
+            "Datos recibidos (MB)": 94.54
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:30",
+            "Datos enviados (MB)": 7.81,
+            "Datos recibidos (MB)": 96.57
+        },
+        {
+            "Timestamp": "02/12/24 - 00:47:31",
+            "Datos enviados (MB)": 7.86,
+            "Datos recibidos (MB)": 98.58
         }
     ],
     "Tráfico": {
         "ICMP": {
-            "Timestamp": "Sin trafico",
+            "Timestamp": "Sin tráfico",
             "Cantidad": 0
         },
         "UDP": {
-            "Timestamp": "01/12/24 - 18:29:38",
-            "Cantidad": 1850
+            "Timestamp": "Sin tráfico",
+            "Cantidad": 0
         },
         "ARP": {
-            "Timestamp": "Sin trafico",
+            "Timestamp": "Sin tráfico",
             "Cantidad": 0
         },
         "TCP": {
-            "Timestamp": "01/12/24 - 18:29:38",
-            "Cantidad": 27
+            "Timestamp": "02/12/24 - 00:47:34",
+            "Cantidad": 1262
         }
-    },
-    "Métricas de Red": [
-        {
-            "Timestamp": "01/12/24 - 18:29:26",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:27",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:28",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:29",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:30",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:31",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:32",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:33",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:34",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        },
-        {
-            "Timestamp": "01/12/24 - 18:29:35",
-            "Datos enviados (MB)": 200.36,
-            "Datos recibidos (MB)": 3892.28
-        }
-    ]
+    }
 }
