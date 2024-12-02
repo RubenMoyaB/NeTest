@@ -194,6 +194,8 @@ def capturar_paquetes(duracion, interfaz):
                     metricas["TCP"]["Timestamp"] = timestamp
                 metricas["TCP"]["Cantidad"] += 1
 
+    except Exception as e:
+        print(f"Error al capturar paquetes: {e}")
     finally:
         captura.close()
 
@@ -215,13 +217,13 @@ def main():
 
     resultados = {"Dispositivos": []}
 
-    # Obtener la subred local para identificar dispositivos en la misma subred
+    # Obtener la subred local y la interfaz de red
     try:
-        interfaz = subprocess.check_output(
+        ruta = subprocess.check_output(
             ["ip", "route", "get", "8.8.8.8"],
             stderr=subprocess.STDOUT, universal_newlines=True
         )
-        match = re.search(r'dev\s+(\S+)', interfaz)
+        match = re.search(r'dev\s+(\S+)', ruta)
         if match:
             nombre_interfaz = match.group(1)
             direccion_ip = subprocess.check_output(
@@ -238,9 +240,14 @@ def main():
                 red_local = None
         else:
             red_local = None
+            nombre_interfaz = "ens33"  # Nombre de la interfaz especificado
     except subprocess.CalledProcessError:
         red_local = None
-        nombre_interfaz = None
+        nombre_interfaz = "ens33"  # Nombre de la interfaz especificado
+
+    # Confirmar si la interfaz es 'ens33'
+    if not nombre_interfaz:
+        nombre_interfaz = "ens33"
 
     # Obtener métricas de red antes de escanear
     metricas_red = obtener_metricas_red()
