@@ -93,25 +93,25 @@ def obtener_latencia(ip):
         return "Desconocido"
 
 def deducir_tipo_dispositivo(puertos_abiertos):
-    print(f"Deduciendo tipo de dispositivo basado en puertos abiertos: {puertos_abiertos}")
-    if any("22/" in puerto for puerto in puertos_abiertos):
-        return "Servidor o dispositivo con SSH"
-    elif any("80/" in puerto or "443/" in puerto for puerto in puertos_abiertos):
+    print("5. Tipo de Dispositivo")
+    if "22/tcp" in puertos_abiertos:
+        return "Dispositivo con SSH"
+    elif "80/tcp" in puertos_abiertos or "443/tcp" in puertos_abiertos:
         return "Web Server (Servidor Web)"
-    elif any("8080/" in puerto for puerto in puertos_abiertos):
-        return "Proxy o Servidor Web (alternativo)"
-    elif any("3389/" in puerto for puerto in puertos_abiertos):
-        return "PC (Escritorio o Laptop) - Escritorio Remoto"
-    elif any("23/" in puerto for puerto in puertos_abiertos):
+    elif "8080/tcp" in puertos_abiertos:
+        return "Proxy o Servidor Web"
+    elif "3389/tcp" in puertos_abiertos:
+        return "PC"
+    elif "23/tcp" in puertos_abiertos:
         return "Dispositivo con Telnet (Router, Switch)"
-    elif any("161/" in puerto for puerto in puertos_abiertos):
+    elif "161/udp" in puertos_abiertos:
         return "Dispositivo de red (Switch, Router, Impresora, Cámaras IP)"
-    elif any("5000/" in puerto for puerto in puertos_abiertos):
-        return "Cámara IP o Dispositivo de Red"
-    elif any("67/" in puerto for puerto in puertos_abiertos):
-        return "Router o Servidor DHCP"
-    elif any("69/" in puerto for puerto in puertos_abiertos):
-        return "Dispositivo de red con TFTP (Posiblemente un switch)"
+    elif "5000/tcp" in puertos_abiertos:
+        return "Dispositivo de Red"
+    elif "67/udp" in puertos_abiertos:
+        return "Router"
+    elif "69/udp" in puertos_abiertos:
+        return "Switch"
     else:
         return "Desconocido"
 
