@@ -8,6 +8,39 @@ from datetime import datetime
 import psutil
 import pyshark
 from scapy.all import ICMP, IP, sr1
+import tkinter as tk
+from tkinter import Toplevel
+from PIL import Image, ImageTk  # Asegúrate de instalar Pillow
+
+def mostrar_imagen(ruta_imagen):
+    """
+    Abre una ventana tkinter y muestra la imagen especificada.
+
+    :param ruta_imagen: Ruta de la imagen a mostrar.
+    """
+    ventana = tk.Tk()
+    ventana.title("Visualización de Imagen")
+
+    # Cargar la imagen
+    try:
+        imagen = Image.open(ruta_imagen)
+        imagen = imagen.resize((400, 400))  # Ajustar tamaño si es necesario
+        imagen_tk = ImageTk.PhotoImage(imagen)
+    except Exception as e:
+        print(f"Error al cargar la imagen: {e}")
+        ventana.destroy()
+        return
+
+    # Crear etiqueta para mostrar la imagen
+    etiqueta_imagen = tk.Label(ventana, image=imagen_tk)
+    etiqueta_imagen.image = imagen_tk
+    etiqueta_imagen.pack()
+
+    # Agregar un botón para cerrar la ventana
+    boton_cerrar = tk.Button(ventana, text="Cerrar", command=ventana.destroy)
+    boton_cerrar.pack()
+
+    ventana.mainloop()
 
 def cargar_base_datos(archivo_csv):
     print(f"Cargando base de datos desde {archivo_csv}...")
@@ -311,4 +344,6 @@ def main():
     print("Fin del programa")
 
 if __name__ == "__main__":
+    mostrar_imagen("logo.jpg")
     main()
+    
