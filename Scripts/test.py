@@ -113,23 +113,23 @@ def obtener_metricas_red():
 def deducir_tipo_dispositivo(puertos_abiertos):
     print("5. Tipo de Dispositivo")
     if "22/tcp" in puertos_abiertos:
-        return "Servidor o dispositivo con SSH"
+        return "Dispositivo con SSH"
     elif "80/tcp" in puertos_abiertos or "443/tcp" in puertos_abiertos:
         return "Web Server (Servidor Web)"
     elif "8080/tcp" in puertos_abiertos:
-        return "Proxy o Servidor Web (alternativo)"
+        return "Proxy o Servidor Web"
     elif "3389/tcp" in puertos_abiertos:
-        return "PC (Escritorio o Laptop) - Escritorio Remoto"
+        return "PC"
     elif "23/tcp" in puertos_abiertos:
         return "Dispositivo con Telnet (Router, Switch)"
     elif "161/udp" in puertos_abiertos:
         return "Dispositivo de red (Switch, Router, Impresora, Cámaras IP)"
     elif "5000/tcp" in puertos_abiertos:
-        return "Cámara IP o Dispositivo de Red"
+        return "Dispositivo de Red"
     elif "67/udp" in puertos_abiertos:
-        return "Router o Servidor DHCP"
+        return "Router"
     elif "69/udp" in puertos_abiertos:
-        return "Dispositivo de red con TFTP (Posiblemente un switch)"
+        return "Switch"
     else:
         return "Desconocido"
     
